@@ -53,9 +53,15 @@ public class PhpTravelsTest {
 		WebElement checkElement6 = driver.findElement(By.name("travellers"));
 		checkElement6.click();
 		
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"options\"]")));
 		WebElement checkElement7 = driver.findElement(By.id("adultPlusBtn"));
 		checkElement7.click();
+		
+		WebElement checkElement8 = driver.findElement(By.xpath("//*[@id=\"hotels\"]/form/div[5]/button"));
+		checkElement8.click();
+		
+		WebElement checkElement9 = driver.findElement(By.xpath("//*[@id=\"body-section\"]/div[5]/div/div[3]/div[1]/div/table/tbody/tr[3]/td/div[3]/a/button"));
+		checkElement9.click();
 		
 	}
 	
